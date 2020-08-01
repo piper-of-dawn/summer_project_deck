@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Deck - Summer Internship Discussion</title>
+
+		<meta name="description" content="Model Validation">
+		<meta name="author" content="Kumar Shantanu">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Model Validation in Credit Risk</h1>
+					</a>
+					
+					<p>
+						<small>Kumar Shantanu, Intern, Model Risk Management, Citi</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Hello</h2>
+					<p>
+						I did some cool stuff in credit risk management and I think it is worthwhile sharing it with you here. Credit risk and rating firms form a substantial portion of our college placements so this might help you. 
+					</p>
+				</section>
+				
+				<section>
+					<h2>My experience at Citi</h2>
+					
+						<p class="fragment fade-in-then-semi-out">Worked with some really cool people!</p>
+						<p class="fragment fade-in-then-semi-out">I did not write a single line of code!</p>
+						
+						
+						</section>
+  
+				<section>
+					<section>
+						<h2>JARGONS AHEAD!!</h2>
+						<p>Let us walkthrough some banking jargons which might be helpful to you.</p>
+						<small> Press 'Down' arrow </small>
+						 
+						<br>
+						<a href="#" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>UNSECURED PORTFOLIOS</h2>
+						<p>This is a jargon for credit cards.</p>
+						</section>
+					<section>
+						<h2>Ending Net Recievable (ENR)</h2>
+						<p>The amount that is owed by clients to Citi at the end of the payment cycle.</p>
+						<br>
+						</section>
+					<section>
+						<h2>Gross Credit Losses (GCL%ENR)</h2>
+						<p>The amount that is not paid on or before the billing date or deadline.</p>
+						<br>
+						</section>
+					<section>
+						<h2>Recoveries </h2>
+						<p>The part of Gross Credit Losses recovered by Citi. </p>
+						<br>
+						</section>
+					<section>
+						<h2>Net Credit Losses (NCL%ENR)</h2>
+						<p>NCL = GCL - Recovery</p>
+						<br>
+						</section>
+					<section>
+						<h2>Deliquency Ratio</h2>
+						<p>The proportion of portfolios that have delayed payments. Deliquent portfolios / Total portfolios</p>
+						<br>
+						</section>
+					<section>
+						<h2>Deliquency Buckets </h2>
+						<p> 
+						<p class="fragment fade-in-then-semi-out">30 DPD</p>
+						<p class="fragment fade-in-then-semi-out">60 DPD</p>
+						<p class="fragment fade-in-then-semi-out">120 DPD</p>
+						</p>
+						<br>
+						</section>
+					
+											
+						
+						<section>
+						<h2>FICO Score</h2>
+						<p> 
+						FICO, originally Fair, Isaac and Company, is a data analytics company which credit rates individuals and businesses. Its ratings are widely used in credit risk analytics.
+						</p>
+						<br>
+						</section>
+						
+						<section>
+						<h2>Lifetime of an asset</h2>
+						<p> 
+						If a loan is due to be paid in 10 years then the lifetime of the asset is 10 years.
+						</p>
+						<br>
+						</section>
+						
+						<section>
+						<h2>Instalment Segment</h2>
+						<p> 
+						When the principle is pre-determined at the beginning of the lifetime of the asset and the loan is paid in regular instalments.
+						</p>
+						<br>
+						</section>
+						
+						<section>
+						<h2>Revolving Segment</h2>
+						<p> 
+						When the principle itself is a random variable. Eg: Credit Cards
+						</p>
+						<br>
+						</section>
+					
+					<section>
+						<h2>Rewrite Segment</h2>
+						<p> 
+						When the defaulted bad loans are reconverted into another asset. 
+						</p>
+						<br>
+						</section>
+					
+					<section>
+						<h2>Now the most important: CCAR</h2>
+						<p> 
+						Comprehensive Capital Analysis and Review (CCAR) is a United States regulatory framework introduced by the Federal Reserve to assess, regulate, and supervise large banks and financial institutions – collectively referred to in the framework as bank holding companies (BHCs). There are similar regulator frameworks such as IFRS-9 etc.
+						</p>
+						<br>
+						</section>
+					
+				</section>
+
+
+				<section>
+					<h2>Model Validation </h2>
+						<p> 
+						The fundamental objective of Risk Assessment is making predictions. Predictions are data driven. Generally large banks use models made out of every prediction algo ever discovered. Eg: There are models based on Regression, autoregressive moving averages, Machine learning, dynamic ML, deep learning etc etc.... No matter what kind of model it is, it has to go through a rigorous validation procedure before it is used for predictive analytics. 
+						</p>
+						</section>
+				
+				<section>
+					<h2>A short overview of testing procedure</h2>
+						<h3>Stage 1 of model testing</h3>
+					
+						<p class="fragment fade-in-then-semi-out">GP1: Current state of portfolio</p>
+						<p class="fragment fade-in-then-semi-out">GP2: Similarity between current state and the Go forward state of portfolio</p>
+					    <p class="fragment fade-in-then-semi-out">GP3: Senstivity to training values</p>
+						<p class="fragment fade-in-then-semi-out">GP4: </p>
+						<p class="fragment fade-in-then-semi-out">GP5: Segmentation and Clustering</p>
+						
+						
+						</section>
+				<section>
+					<h2>Stage 2 of model testing</h2
+					<h3>Stress testing</h3>
+					<p> Model is given data shocks which are stress values and we see how model performs in such a scenario </p>
+					
+						</section>
+				<section>
+					<h2>Stage 3 of model testing</h2
+					<h3>Back testing</h3>
+					<p> Model predictions are tested when actual values are realised. And we examine if model is able to predict it with accuracy</p>
+					
+						</section>
+				
+						</section>
+
+			
+
+			
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
